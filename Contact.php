@@ -1,6 +1,7 @@
 <html>
 <?php require_once 'Header.php';?>
-<header></header>
+
+
     <body>
     <h1>Contact me!</h1>
     <div> 

@@ -1,29 +1,35 @@
+<!DOCTYPE html>
 <html>
 <!-- start with the php file that creates the top and bottom part of the
 website on each page, just do the header, require_once("name of header.php");
 make the header  -->
-    <?php require_once 'Header.php';?>
-<header>
-<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
-    <h1>
-    font-family: 'Playfair Display';
-</h1>
-    </header>
-<body>
-                    
-        <div>
+<head>
+    <meta charset="utf-8"/>
+      <link href="Styles/style.css" rel="stylesheet"/>
+      <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
+<?php require_once 'Header.php';?>
+</head>
+    
 
-    <h1>Sarah Hart</h1>
-    <br>
-    <a href = "Contact.php">Contact Me</a>
-    <br>
-    <a href = "Work.php">My Work</a>
-</div>
+<body>
+<div id="page-container">
+   <div id="content-wrap">
+            
+        <div id = "TopButtons">
+            <a href = "Contact.php">Contact Me</a>
+        </div>
+
+        <div id = "TopButtons">
+            <a href = "Work.php">My Work</a>
+        </div>
     <div>
-        hey babe take a walk on the wild side
-        
+        hey babe take a walk on the wild side    
     </div>
 
+    </div>
+        <?php require_once 'Footer.php';?>
+ </div>
 
-    </body>
+</body>
+    
 </html>

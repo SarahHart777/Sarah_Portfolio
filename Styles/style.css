@@ -1,0 +1,23 @@
+
+/* This goes around everything on the page, and sets its minimum height to 100% of the viewport height (vh). 
+As it is relative, its child elements can be set with absolute position based on it later. */
+#page-container {
+    position: relative;
+    min-height: 79vh;
+  }
+
+  /* This is for my footer to set the height */
+  #content-wrap {
+    padding-bottom: 2.5rem;   
+  }
+
+#TopButtons{
+    background-color: #A1DBF1;
+    padding: 16px 32px;
+  text-align: center;
+  display:inline-block;
+  font-size: 24px;
+  margin: 15px 50px;
+  color:black;
+  border-radius: 10px;
+}
