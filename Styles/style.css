@@ -15,57 +15,76 @@ a:active { text-decoration: none; }
   display: table;
 }
 
-/* This goes around everything on the page, and sets its minimum height to 100% of the viewport height (vh). 
-As it is relative, its child elements can be set with absolute position based on it later. */
-#page-container {
-    position: relative;
-    min-height: 79vh;
-    /* width: 1024px;
-    height: 768px; */
-  }
+.wrapper{
+  min-height: 100%;
+  margin: 0 auto -60px;
+}
 
-  /* This is for my footer to set the height */
-  #content-wrap {
-    padding-bottom: 2.5rem;   
+header{
+  background: conic-gradient(from -3.04deg at 27.64% 87.94%, #00B6BC -0.54deg, rgba(0, 182, 188, 0) 3.06deg, rgba(0, 182, 188, 0) 5.16deg, #00B6BC 296.92deg, #00B6BC 359.46deg, rgba(0, 182, 188, 0) 363.06deg);
+margin: -8px;
+height: 150px;
+}
+
+header > h1{
+font-family: 'Playfair Display';
+color: white;
+float: left;
+font-size: 75px;
+font-weight: lighter;
+left: 20px;
+text-align: center;
+}
+
+.footer{
+  background: #71D5E4;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  margin-top: 25px;
+  margin: 25px 0px -8px -12px;
+  padding: 10px;
+}
+
+  nav{
+    /* this is hitting something so when i change the margin by this much it just moves down and makes two rows
+    I did this with both ul and nav and it's the same */
+    margin-right: 400px; 
   }
 
   #TitleText{
     color: black;
-    text-align: center;
     font-family: 'Playfair Display';
+    margin-top: 80px;
     margin-left: 500px;
-    margin-top: 10px;
+    font-size: 90px;
   }
 
 #TopButtons{
-  
-    background-color: #A1DBF1;
-    padding: 16px 32px;
-    font-family: 'Playfair Display';
+  background-color: #A1DBF1;
+  padding: 16px 32px;
+  font-family: 'Playfair Display';
   text-align: center;
   display:inline-block; 
   font-size: 24px;
-  margin: 15px 50px;
+  margin: 15px 15px;
   color:black;
   border-radius: 10px;
-    border-color: #F7CAC9;
+  border-color: #F7CAC9;
   border-style:double;
   border-width: 8px;
   box-shadow: -2px 2px 5px;
 }
 
 #AboutMeBox{
-  /* position: relative; */
     background-color: #E4F4F3;
     border-color: #F7CAC9;
     border-style:double;
     border-width: 20px;
     border-radius: 30px;
-      padding: 50px 0px 50px 10px;
-     margin: -405px 10px 10px 600px; 
-      display: block;
-      
-    
+    padding: 50px 0px 50px 10px;
+    margin: -405px 10px 100px 600px; 
+    display: block;
 }
 
 #text{
@@ -74,9 +93,10 @@ As it is relative, its child elements can be set with absolute position based on
     color: black;
     margin: 10px 30px;
 }
+.column > img {
+  margin: 100px 300px 10px 10px;
+  padding: 50px 0px 50px 10px;
 
-#headshot{
-  position: relative;
-   margin: 50px 300px 10px 10px;
-   padding: 50px 50px;
+  width: 415px;
+  height: 400px;
 }
