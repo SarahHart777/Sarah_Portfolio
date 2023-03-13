@@ -1,3 +1,5 @@
+<html>
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
 <style>
     footer{
         background: #71D5E4;
@@ -12,3 +14,4 @@
 
 <footer>
 </footer>
+</html>

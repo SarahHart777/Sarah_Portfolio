@@ -1,3 +1,5 @@
+<html>
+<link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
 <style>
 
 header{
@@ -17,12 +19,14 @@ left: 20px;
 text-align: center;
 }
 
+
+
 </style>
 <header>
 <h1>
     Sarah Hart
 </h1>
 </header>
-
+</html>
 
 

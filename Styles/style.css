@@ -1,9 +1,27 @@
 
+a:link { text-decoration: none; }  /*this is how the link text looks */
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+.column{
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* This goes around everything on the page, and sets its minimum height to 100% of the viewport height (vh). 
 As it is relative, its child elements can be set with absolute position based on it later. */
 #page-container {
     position: relative;
     min-height: 79vh;
+    /* width: 1024px;
+    height: 768px; */
   }
 
   /* This is for my footer to set the height */
@@ -11,13 +29,54 @@ As it is relative, its child elements can be set with absolute position based on
     padding-bottom: 2.5rem;   
   }
 
+  #TitleText{
+    color: black;
+    text-align: center;
+    font-family: 'Playfair Display';
+    margin-left: 500px;
+    margin-top: 10px;
+  }
+
 #TopButtons{
+  
     background-color: #A1DBF1;
     padding: 16px 32px;
+    font-family: 'Playfair Display';
   text-align: center;
-  display:inline-block;
+  display:inline-block; 
   font-size: 24px;
   margin: 15px 50px;
   color:black;
   border-radius: 10px;
+    border-color: #F7CAC9;
+  border-style:double;
+  border-width: 8px;
+  box-shadow: -2px 2px 5px;
+}
+
+#AboutMeBox{
+  /* position: relative; */
+    background-color: #E4F4F3;
+    border-color: #F7CAC9;
+    border-style:double;
+    border-width: 20px;
+    border-radius: 30px;
+      padding: 50px 0px 50px 10px;
+     margin: -405px 10px 10px 600px; 
+      display: block;
+      
+    
+}
+
+#text{
+  font-size: large;
+    font-family: 'Playfair Display';
+    color: black;
+    margin: 10px 30px;
+}
+
+#headshot{
+  position: relative;
+   margin: 50px 300px 10px 10px;
+   padding: 50px 50px;
 }
